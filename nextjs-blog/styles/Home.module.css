@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('https://fonts.cdnfonts.com/css/avenir?styles=116526');
+}
+
+.firstScreen{
+  background-image: url(https://assets.devialet.com/fr-fr/media/dvl_media/Hero100_Phantom_Gold_Refurbished_desktop.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  margin: 0;
+ 
+}
+
+.header{
+display : block;
+height: 50px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding-top: 20px
+}
+.logo{
+  width: 150px;
+  height: 40px;
+  color: white;
+  justify-content: center;
+  padding-left: 1.5vw
+
+}
+.navBar{
+  display: flex;
+  color: white;
+  width: 55vw;
+  justify-content: space-between;
+  font-family: Avenir;
+  font-weight: 500;
+  margin-left: 5vw;
+  font-size: 16px;
+  
+  
+  
+}
+
+.icons{
+  width: 10vw;
+  display: flex;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  justify-content: space-around;
+
+}
+
+.titleContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4vw;
+  margin-top: 30vh;
+  color: white;
+  font-family: Avenir;
+  font-size: 25px;
+}
+.titleButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform:uppercase;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 100px;
+  padding: 13px 25px;
+}
