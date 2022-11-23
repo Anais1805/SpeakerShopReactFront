@@ -50,7 +50,9 @@ padding-top: 20px
   justify-content: space-around;
 
 }
-
+.title{
+  font-weight: 900;
+}
 .titleContainer{
   display: flex;
   flex-direction: column;
@@ -72,4 +74,144 @@ padding-top: 20px
   font-weight: bold;
   width: 100px;
   padding: 13px 25px;
+}
+
+.secondScreen{
+  width: 100vw;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(242, 240, 240);
+}
+
+.images{
+  width: 45vw;
+  height: 90vh;
+  margin: 5vw;
+  border-radius: 10px;
+}
+.rightSecondScreenContainer{
+  font-family: Avenir;
+  font-size: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 6vw
+  
+}
+.abstract{
+  font-weight: 450;
+  line-height: 2;
+  font-size: 22px;
+}
+
+.secondScreenButton{
+font-size: 16px;
+text-transform: uppercase;
+font-weight: bold;
+padding-top: 15px;
+
+}
+
+.thirdScreen{
+  width: 100vw;
+  height: 380vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scrollbar-width: none;
+}
+.titles3Container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40vw;
+  height: 50vh;
+  margin: 0.5vw;
+  padding-bottom: 50px;
+}
+.titles3{
+  color: white;
+  font-family: Avenir;
+  font-size: 50px;
+  margin: 0
+  
+
+  
+}
+.speakers{
+  width: 43vw;
+  height: 90vh;
+  margin: 0.5vw;
+  border-radius: 10px;
+  background-image: url('https://assets.devialet.com/fr-fr/media/dvl_media/HP_Categories_Speakers_light_grey_2000x2000.jpg?twic=v1/background=000/cover=1500x1500');
+  background-size: cover;
+}
+.media{
+  width: 43vw;
+  height: 90vh;
+  margin: 0.5vw;
+  border-radius: 10px;
+  background-image: url('https://assets.devialet.com/fr-fr/media/dvl_media/D_specs_2x.jpg?twic=v1/background=000/cover=1500x2000');
+  background-size: cover;
+  
+}
+.twix{
+  width: 43vw;
+  height: 90vh;
+  margin: 0.5vw;
+  border-radius: 10px;
+  background-image: url('https://assets.devialet.com/fr-fr/media/dvl_media/HP_Categories_Twix_light_grey_2000x2000.jpg?twic=v1/background=000/cover=1500x1500');
+  background-size: cover;
+}
+.gemini{
+  width: 43vw;
+  height: 90vh;
+  margin: 0.5vw;
+  border-radius: 10px;
+  background-image: url('https://assets.devialet.com/fr-fr/media/dvl_media/HP_Categories_Gemini_light_grey_2000x2000.jpg?twic=v1/background=000/cover=1500x1500');
+  background-size: cover;
+}
+.gemini2{
+  width: 43vw;
+  height: 90vh;
+  margin: 0.5vw;
+  border-radius: 10px;
+  background-image: url('https://assets.devialet.com/fr-fr/media/dvl_media/Fit_all_ears__2x.png?twic=v1/background=000/cover=1500x2000');
+  background-size: cover;
+}
+.amplifiers{
+  width: 43vw;
+  height: 90vh;
+  margin: 0.5vw;
+  border-radius: 10px;
+  background-image: url('https://assets.devialet.com/fr-fr/media/dvl_media/HP_Categories_Amplifiers_light_grey__2000x2000.jpg?twic=v1/background=000/cover=1500x1500');
+  background-size: cover;
+}
+.rightColumn{
+  display: flex;
+  flex-direction: column;
+  margin-top: -80vh;
+}
+.leftColumn{
+  display: flex;
+  flex-direction: column;
+
+}
+.titleCards{
+  font-family: Avenir;
+  margin: 25px;
+  font-size: 30px
+}
+.buttonCards{
+font-size: 16px;
+text-transform: uppercase;
+font-weight: bold;
+padding-top: 15px;
+font-family: Avenir;
+margin: 40px;
+margin-top: 72vh;
+text-align: end;
+
 }
