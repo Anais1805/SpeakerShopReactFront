@@ -81,7 +81,7 @@ padding-top: 20px
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(242, 240, 240);
+  background-color:#F4F4F4;
 }
 .images{
   width: 45vw;
@@ -189,14 +189,33 @@ padding-top: 15px;
 
 .fifthScreen{
   width: 100vw;
-  height: 400vh;
-  background-color: white;
+  height: 160vh;
+  background-color: #F4F4F4;
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
   align-items: center;
   font-family: Avenir;
 
+}
+.ambitionSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3vh 25vw 3vh 25vw;
+
+}
+.titleAmbition{
+  font-size: 45px;
+  font-weight: 900;
+  margin: 0;
+  padding-top: 10vh
+}
+.textAmbition{
+  font-size: 35px;
+  text-align: center;
+  margin:0
 }
 .video{
 overflow: hidden;
@@ -205,3 +224,61 @@ height: 100vh;
 display: flex;
 justify-content: stretch;
 }
+
+.sixthScreen{
+  width: 100vw;
+  height: 130vh;
+  background-color: #F4F4F4;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.allLivesTitles{
+  font-family: Avenir;
+  font-size: 50px;
+  margin: 0;
+  font-weight: 900;
+  line-height: 1.5
+  
+}
+.allLivesText{
+  font-family: Avenir;
+  font-size: 23px;
+  width: 29vw;
+  font-weight: 450;
+  margin: 0;
+  margin-right: 10vw;
+  
+
+  
+  
+}
+.allLivesImages{
+  width: 40vw;
+  height: 40vh;
+  margin:0;
+  padding:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.allLivesImg1{
+  width: 40vw;
+  height: 80vh;
+  margin-left: -10vw;
+  z-index: 2
+}
+.allLivesImg2{
+  width: 45vw;
+  height: 90vh;
+  margin: 5vw;
+  border-radius: 10px;
+  margin-left: -10vw;
+  position: sticky;
+  z-index: 1
+}
+

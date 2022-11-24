@@ -11,7 +11,7 @@ import { imgData1 } from "../data/imgCardsData";
 import { imgData2 } from "../data/imgCardsData";
 import { bannerInfos } from "../data/bannerIconData";
 
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 export default function Home() {
@@ -120,16 +120,47 @@ export default function Home() {
       </div>
 
       <div className={styles.fifthScreen}>
-        <h1 className={styles.title}>Notre ambition</h1>
-        <h2>
-          Redonner au son la place qu'il mérite en proposant des expériences
-          d'écoute exceptionnelles
-        </h2>
-        <p className={styles.discoverButton}>En savoir plus ›</p>
+        <div className={styles.ambitionSection}>
+          <h1 className={styles.titleAmbition}>Notre ambition</h1>
+          <h2 className={styles.textAmbition}>
+            Redonner au son la place qu'il mérite en proposant des expériences
+            d'écoute exceptionnelles
+          </h2>
+          <p className={styles.discoverButton} style={{ paddingTop: "7vh" }}>
+            En savoir plus ›
+          </p>
+        </div>
         <div className={styles.video}>
-          <ReactPlayer style={{margin:0, padding:0}} url='https://www.devialet.com/media/dvl_media/Video_Statues_Test_1.mp4' playing={true} loop={true} width={'100%'} height={'100%'} />
+          <ReactPlayer
+            style={{ margin: 0, padding: 0 }}
+            url="https://www.devialet.com/media/dvl_media/Video_Statues_Test_1.mp4"
+            playing={true}
+            loop={true}
+            width={"100%"}
+            height={"100%"}
+          />
+        </div>
+      </div>
+
+      <div className={styles.sixthScreen}>
+          <div className={styles.allLivesText}>
+            <h1 className={styles.allLivesTitles} style={{ fontWeight: "450" }}>
+              Dans tous vos
+            </h1>
+            <h1 className={styles.allLivesTitles}>lieux de vies</h1>
+            <p className={styles.abstract} style={{ lineHeight: "1.75" }}>
+              L'application Devialet fournit un écosystème ouvert et polyvalent,
+              qui convient à vos préférences. Profitez de vos services de
+              streaming musicaus favoris via les protocoles intégérés: AirPlay
+              2®, Roon Ready, Bluetooth®, UPnP, Spotify Connect{" "}
+            </p>
+          </div>
+          <div className={styles.allLivesImages}>
+                <img className={styles.allLivesImg1}src='https://assets.devialet.com/fr-fr/media/dvl_media/Push_App_HP_Phone.png?twic=v1/background=transparent/cover=600x1120'/> 
+                <img className={styles.allLivesImg2} src='https://assets.devialet.com/fr-fr/media/dvl_media/201110_DEVIALET_PHANTOM_I_GOLD_2_2.jpg?twic=v1/background=f4f4f4/cover=1300x1300'/>
           </div>
       </div>
+
     </div>
   );
 }
