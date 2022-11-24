@@ -1,0 +1,24 @@
+.cards{
+    width: 43vw;
+    height: 90vh;
+    margin: 0.5vw;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.titleCards{
+    font-family: Avenir;
+    margin: 25px;
+    font-size: 30px
+  }
+  .buttonCards{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 15px;
+  font-family: Avenir;
+  margin: 40px;
+  margin-top: 72vh;
+  text-align: end;
+  
+  }
