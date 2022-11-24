@@ -161,6 +161,19 @@ export default function Home() {
           </div>
       </div>
 
+    <div className={styles.seventhScreen}>
+        <div className={styles.accessoriesContent}>
+            <div className={styles.leftPart}>
+                <p className={styles.accessoryText}>Trouvez</p>
+                <h1 className={styles.accessoryText} style={{fontWeight: '900'}}>l'accessoire</h1>
+                <p className={styles.accessoryText}>parfait.</p>
+                <p className={styles.accessoryButton}>Tous les accessoires</p>
+            </div>
+            <div className={styles.rightPart}>
+                <img className={styles.accessoryImg} src='https://assets.devialet.com/fr-fr/media/dvl_media/HP_accessories_remote_tree-hd.png?twic=v1/background=transparent/cover=1300x1442'/>
+            </div>
+        </div>
+    </div>
     </div>
   );
 }

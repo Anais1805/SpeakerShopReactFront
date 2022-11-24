@@ -4,7 +4,7 @@
 }
 
 .firstScreen{
-  background-image: url(https://assets.devialet.com/fr-fr/media/dvl_media/Hero100_Phantom_Gold_Refurbished_desktop.jpg);
+  background-image: url(https://assets.devialet.com/fr-fr/media/dvl_media/Hero100_phantom_Gold_Refurbished_desktop.jpg);
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -64,7 +64,7 @@ padding-top: 20px
   display: flex;
   justify-content: center;
   align-items: center;
-  text-transform:uppercase;
+  text-transform:upercase;
   border: 2px solid white;
   border-radius: 10px;
   font-size: 12px;
@@ -104,7 +104,7 @@ padding-top: 20px
 }
 .discoverButton{
 font-size: 16px;
-text-transform: uppercase;
+text-transform: upercase;
 font-weight: bold;
 padding-top: 15px;
 }
@@ -280,5 +280,83 @@ justify-content: stretch;
   margin-left: -10vw;
   position: sticky;
   z-index: 1
+}
+
+.seventhScreen{
+  width: 100vw;
+  height: 130vh;
+  background-color:  #F4F4F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.accessoriesContent{
+  width: 90vw;
+  height: 98vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0vh 5vw;
+  background-color: #BCAC9B;
+  position: absolute;
+  
+}
+.leftPart{
+  height: 90vh;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  
+}
+
+.accessoryText{
+  font-family: Avenir;
+  width: 30vw;
+  margin: 0;
+  margin-left: 6vw;
+  font-size: 70px;
+  line-height: 1.15em;
+  font-weight: 450;
+  justify-content: space-around;
+  
+  
+}
+.accessoryImg{
+  width: 45vw;
+  height: 98vh;
+  margin-top: 4px;
+  overflow: hidden;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  
+}
+.accessoryButton{
+  
+  font-family: Avenir;
+  width: 30vw;
+  margin-top: 8vh;
+  background-color:black;
+  color: white;
+  padding: 2vh;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 6vw;
+  position: relative;
+  transition:all 0.3s;
+  overflow: hidden;
+  
+}
+
+
+.accessoryButton:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid black
 }
 
