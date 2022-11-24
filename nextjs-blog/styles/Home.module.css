@@ -4,12 +4,12 @@
 }
 
 .firstScreen{
-  background-image: url(https://assets.devialet.com/fr-fr/media/dvl_media/Hero100_phantom_Gold_Refurbished_desktop.jpg);
+  background-image:url('https://assets.devialet.com/fr-fr/media/dvl_media/Hero100_Phantom_Gold_Refurbished_desktop.jpg?twic=v1/background=000000/cover=2400x1478');
   width: 100vw;
-  height: 100vh;
+  height:100vh;
   background-size: cover;
   margin: 0;
- 
+  
 }
 .header{
 display : block;
@@ -347,9 +347,8 @@ justify-content: stretch;
   text-transform: uppercase;
   font-weight: bold;
   margin-left: 6vw;
-  position: relative;
   transition:all 0.3s;
-  overflow: hidden;
+
   
 }
 

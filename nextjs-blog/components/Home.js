@@ -42,6 +42,7 @@ export default function Home() {
 
   return (
     <div className={styles.body}>
+        
       <div className={styles.firstScreen}>
         <div className={styles.header}>
           <img className={styles.logo} src="logoD.png" alt="logo" />
