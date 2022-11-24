@@ -89,7 +89,7 @@ padding-top: 20px
   margin: 5vw;
   border-radius: 10px;
 }
-.rightSecondScreenContainer{
+.rightScreenContainer{
   font-family: Avenir;
   font-size: 25px;
   flex-wrap: wrap;
@@ -102,7 +102,7 @@ padding-top: 20px
   line-height: 2;
   font-size: 22px;
 }
-.secondScreenButton{
+.discoverButton{
 font-size: 16px;
 text-transform: uppercase;
 font-weight: bold;
@@ -163,4 +163,45 @@ padding-top: 15px;
   font-weight: bold;
   font-size: 13px
   
+}
+
+
+.fourthScreen{
+  width: 100vmax;
+  height: 100vh;
+  background-color: #E5DED6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgGiftCard{
+  width: 50vw;
+  height: 75vh;
+  border-radius: 10px;
+  margin: 5vw
+}
+.giftTitle{
+  font-weight: 450;
+  line-height: 1.5;
+  font-size: 48px
+}
+
+
+.fifthScreen{
+  width: 100vw;
+  height: 400vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  font-family: Avenir;
+
+}
+.video{
+overflow: hidden;
+border-radius: 10px;
+height: 100vh;
+display: flex;
+justify-content: stretch;
 }

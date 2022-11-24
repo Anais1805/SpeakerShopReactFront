@@ -7,12 +7,14 @@ import { UilShoppingBag } from "@iconscout/react-unicons";
 
 import ImgCards from "./ImgCards";
 import WhiteBanner from "./WhiteBanner";
-import {imgData1} from '../data/imgCardsData'
-import {imgData2} from '../data/imgCardsData'
-import {bannerInfos} from '../data/bannerIconData'
+import { imgData1 } from "../data/imgCardsData";
+import { imgData2 } from "../data/imgCardsData";
+import { bannerInfos } from "../data/bannerIconData";
+
+import dynamic from 'next/dynamic'
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 export default function Home() {
-
   const cards1 = imgData1.map((data, i) => {
     return (
       <ImgCards
@@ -34,12 +36,10 @@ export default function Home() {
     );
   });
 
-  
-
   const banner = bannerInfos.map((data, i) => {
-    return <WhiteBanner icon={data.icon} title={data.title} />;
+    return <WhiteBanner key={i} icon={data.icon} title={data.title} />;
   });
-  
+
   return (
     <div className={styles.body}>
       <div className={styles.firstScreen}>
@@ -75,13 +75,13 @@ export default function Home() {
           className={styles.images}
           src="https://assets.devialet.com/fr-fr/media/dvl_media/KV_Diablo_Lifestyle_2000x2000.jpg?twic=v1/background=f4f4f4/cover=1300x1300"
         />
-        <div className={styles.rightSecondScreenContainer}>
+        <div className={styles.rightScreenContainer}>
           <h1 className={styles.title}>Devialet Mania.</h1>
           <p className={styles.abstract}>
             La première enceinte stéréo portable haute-fidélité de Devialet,
             embarque notre obsession du son pur dans tous vos moments de vie.
           </p>
-          <p className={styles.secondScreenButton}>Découvrir ›</p>
+          <p className={styles.discoverButton}>Découvrir ›</p>
         </div>
       </div>
 
@@ -99,6 +99,37 @@ export default function Home() {
       </div>
 
       <div className={styles.whiteBanner}>{banner}</div>
+
+      <div className={styles.fourthScreen}>
+        <img
+          className={styles.imgGiftCard}
+          src="https://assets.devialet.com/fr-fr/media/dvl_media/egift_card_logo.jpg?twic=v1/background=E5DED6/cover=1100x1100"
+        />
+        <div
+          className={styles.rightScreenContainer}
+          style={{ marginLeft: "6vw", paddingRight: "6vw" }}
+        >
+          <h1 className={styles.giftTitle}>Offrez Devialet à vos proches</h1>
+          <p className={styles.abstract}>
+            En quelques clics, la E-carte cadeau vous permet d'offrir, seul ou à
+            plusieurs, l'expérience Devialet à vos proches. La E-carte cadeau
+            est valable uniquement sur devialet.com
+          </p>
+          <p className={styles.discoverButton}>Découvrir ›</p>
+        </div>
+      </div>
+
+      <div className={styles.fifthScreen}>
+        <h1 className={styles.title}>Notre ambition</h1>
+        <h2>
+          Redonner au son la place qu'il mérite en proposant des expériences
+          d'écoute exceptionnelles
+        </h2>
+        <p className={styles.discoverButton}>En savoir plus ›</p>
+        <div className={styles.video}>
+          <ReactPlayer style={{margin:0, padding:0}} url='https://www.devialet.com/media/dvl_media/Video_Statues_Test_1.mp4' playing={true} loop={true} width={'100%'} height={'100%'} />
+          </div>
+      </div>
     </div>
   );
 }
