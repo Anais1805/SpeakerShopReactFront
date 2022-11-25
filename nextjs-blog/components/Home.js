@@ -15,6 +15,8 @@ import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 export default function Home() {
+
+    const discoverStyle = {}
   const cards1 = imgData1.map((data, i) => {
     return (
       <ImgCards
@@ -42,7 +44,7 @@ export default function Home() {
 
   return (
     <div className={styles.body}>
-        
+
       <div className={styles.firstScreen}>
         <div className={styles.header}>
           <img className={styles.logo} src="logoD.png" alt="logo" />
