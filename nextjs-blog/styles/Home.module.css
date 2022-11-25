@@ -1,8 +1,4 @@
-@font-face {
-  font-family: 'Avenir';
-  src: url('https://fonts.cdnfonts.com/css/avenir?styles=116526');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 .firstScreen{
   background-image:url('https://assets.devialet.com/fr-fr/media/dvl_media/Hero100_Phantom_Gold_Refurbished_desktop.jpg?twic=v1/background=000000/cover=2400x1478');
   width: 100vw;
@@ -32,7 +28,7 @@ padding-top: 20px
   color: white;
   width: 55vw;
   justify-content: space-between;
-  font-family: Avenir;
+  font-family: Montserrat;
   font-weight: 500;
   margin-left: 5vw;
   font-size: 16px;
@@ -57,14 +53,14 @@ padding-top: 20px
   margin-left: 4vw;
   margin-top: 30vh;
   color: white;
-  font-family: Avenir;
+  font-family: Montserrat;
   font-size: 25px;
 }
 .titleButton {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-transform:upercase;
+  text-transform: uppercase;
   border: 2px solid white;
   border-radius: 10px;
   font-size: 12px;
@@ -90,7 +86,7 @@ padding-top: 20px
   border-radius: 10px;
 }
 .rightScreenContainer{
-  font-family: Avenir;
+  font-family: Montserrat;
   font-size: 25px;
   flex-wrap: wrap;
   justify-content: center;
@@ -130,7 +126,7 @@ padding-top: 15px;
 }
 .titles3{
   color: white;
-  font-family: Avenir;
+  font-family: Montserrat;
   font-size: 50px;
   margin: 0 
 }
@@ -159,7 +155,7 @@ padding-top: 15px;
   border-radius: 50%;
   padding: 5px;
   display: inline;
-  font-family: Avenir;
+  font-family: Montserrat;
   font-weight: bold;
   font-size: 13px
   
@@ -238,7 +234,7 @@ justify-content: stretch;
 }
 
 .allLivesTitles{
-  font-family: Avenir;
+  font-family: Montserrat;
   font-size: 50px;
   margin: 0;
   font-weight: 900;
@@ -246,7 +242,7 @@ justify-content: stretch;
   
 }
 .allLivesText{
-  font-family: Avenir;
+  font-family: Montserrat;
   font-size: 23px;
   width: 29vw;
   font-weight: 450;
@@ -314,7 +310,7 @@ justify-content: stretch;
 }
 
 .accessoryText{
-  font-family: Avenir;
+  font-family: Montserrat;
   width: 30vw;
   margin: 0;
   margin-left: 6vw;
@@ -336,7 +332,7 @@ justify-content: stretch;
 }
 .accessoryButton{
   
-  font-family: Avenir;
+  font-family: Montserrat;
   width: 30vw;
   margin-top: 8vh;
   background-color:black;
@@ -347,15 +343,140 @@ justify-content: stretch;
   text-transform: uppercase;
   font-weight: bold;
   margin-left: 6vw;
-  transition:all 0.3s;
-
-  
+  transition:all 0.3s;  
 }
-
-
 .accessoryButton:hover{
   background-color: white;
   color: black;
   border: 2px solid black
 }
 
+.eighthScreen{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://assets.devialet.com/fr-fr/media/dvl_media/HP_News_Arles_Background.jpg?twic=v1/background=f4f4f4/cover=1500x850');
+  font-family: Montserrat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+.meetingsContent{
+  margin-left: 5vw;
+  
+
+}
+.meetingsSubtitle{
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+.meetingsTitles{
+  font-family: Montserrat;
+  font-size: 45px;
+  margin:0;
+  margin-top: 1vh;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing:0.1mm;
+}
+
+.meetingsText{
+  font-family: Montserrat;
+  font-size: 20px;
+  width: 45vw;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 3vh;
+  margin-right: 7vw;
+  line-height: 2;
+}
+.ninthScreen{
+  width: 100vw;
+  height: 100vh;
+  font-family: Montserrat;
+  display: flex;
+  justify-content: center;
+  background-color:  #F4F4F4;
+
+}
+.storiesContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+.storiesTitles{
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.storiesTitles::before{
+  margin-right:3em
+}
+.storiesTitles::after{
+margin-left:3em
+}
+.imgStoriesContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.imgStories{
+  width: 23vw;
+  height: 55vh;
+  background-size: contain;
+  color: #FFF;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 1vw;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  transition:all 0.3s;  
+}
+.imgStories:hover{
+  filter: contrast(50%);
+  cursor: pointer;
+   
+}
+.imgStoriesText{
+margin-top: 2.5vh; 
+margin-left: 1.5vw; 
+margin-bottom : 1.5vh; 
+
+}
+.imgStoriesSubtitles{
+  font-weight: 400;
+  font-size: 11px;
+  color: rgb(203, 201, 201);
+  margin-left: 1.5vw; 
+  margin-right: 1vw;
+  line-height: 2;
+  
+}
+.storiesButton{
+  font-family: Montserrat;
+  width: 12vw;
+  margin-top: 3vh;
+  background-color:black;
+  color: white;
+  padding: 2vh;
+  border-radius: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition:all 0.3s;  
+  font-weight: 600;
+  font-size: 12px
+}
+.storiesButton:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid black
+}

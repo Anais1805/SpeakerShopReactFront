@@ -15,8 +15,7 @@ import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 export default function Home() {
-
-    const discoverStyle = {}
+  const discoverStyle = {};
   const cards1 = imgData1.map((data, i) => {
     return (
       <ImgCards
@@ -44,7 +43,6 @@ export default function Home() {
 
   return (
     <div className={styles.body}>
-
       <div className={styles.firstScreen}>
         <div className={styles.header}>
           <img className={styles.logo} src="logoD.png" alt="logo" />
@@ -146,37 +144,83 @@ export default function Home() {
       </div>
 
       <div className={styles.sixthScreen}>
-          <div className={styles.allLivesText}>
-            <h1 className={styles.allLivesTitles} style={{ fontWeight: "450" }}>
-              Dans tous vos
-            </h1>
-            <h1 className={styles.allLivesTitles}>lieux de vies</h1>
-            <p className={styles.abstract} style={{ lineHeight: "1.75" }}>
-              L'application Devialet fournit un écosystème ouvert et polyvalent,
-              qui convient à vos préférences. Profitez de vos services de
-              streaming musicaus favoris via les protocoles intégérés: AirPlay
-              2®, Roon Ready, Bluetooth®, UPnP, Spotify Connect{" "}
-            </p>
-          </div>
-          <div className={styles.allLivesImages}>
-                <img className={styles.allLivesImg1}src='https://assets.devialet.com/fr-fr/media/dvl_media/Push_App_HP_Phone.png?twic=v1/background=transparent/cover=600x1120'/> 
-                <img className={styles.allLivesImg2} src='https://assets.devialet.com/fr-fr/media/dvl_media/201110_DEVIALET_PHANTOM_I_GOLD_2_2.jpg?twic=v1/background=f4f4f4/cover=1300x1300'/>
-          </div>
+        <div className={styles.allLivesText}>
+          <h1 className={styles.allLivesTitles} style={{ fontWeight: "450" }}>
+            Dans tous vos
+          </h1>
+          <h1 className={styles.allLivesTitles}>lieux de vies</h1>
+          <p className={styles.abstract} style={{ lineHeight: "1.75" }}>
+            L'application Devialet fournit un écosystème ouvert et polyvalent,
+            qui convient à vos préférences. Profitez de vos services de
+            streaming musicaus favoris via les protocoles intégérés: AirPlay 2®,
+            Roon Ready, Bluetooth®, UPnP, Spotify Connect{" "}
+          </p>
+        </div>
+        <div className={styles.allLivesImages}>
+          <img
+            className={styles.allLivesImg1}
+            src="https://assets.devialet.com/fr-fr/media/dvl_media/Push_App_HP_Phone.png?twic=v1/background=transparent/cover=600x1120"
+          />
+          <img
+            className={styles.allLivesImg2}
+            src="https://assets.devialet.com/fr-fr/media/dvl_media/201110_DEVIALET_PHANTOM_I_GOLD_2_2.jpg?twic=v1/background=f4f4f4/cover=1300x1300"
+          />
+        </div>
       </div>
 
-    <div className={styles.seventhScreen}>
+      <div className={styles.seventhScreen}>
         <div className={styles.accessoriesContent}>
-            <div className={styles.leftPart}>
-                <p className={styles.accessoryText}>Trouvez</p>
-                <h1 className={styles.accessoryText} style={{fontWeight: '900'}}>l'accessoire</h1>
-                <p className={styles.accessoryText}>parfait.</p>
-                <p className={styles.accessoryButton}>Tous les accessoires</p>
-            </div>
-            <div className={styles.rightPart}>
-                <img className={styles.accessoryImg} src='https://assets.devialet.com/fr-fr/media/dvl_media/HP_accessories_remote_tree-hd.png?twic=v1/background=transparent/cover=1300x1442'/>
-            </div>
+          <div className={styles.leftPart}>
+            <p className={styles.accessoryText}>Trouvez</p>
+            <h1 className={styles.accessoryText} style={{ fontWeight: "900" }}>
+              l'accessoire
+            </h1>
+            <p className={styles.accessoryText}>parfait.</p>
+            <p className={styles.accessoryButton}>Tous les accessoires</p>
+          </div>
+          <div className={styles.rightPart}>
+            <img
+              className={styles.accessoryImg}
+              src="https://assets.devialet.com/fr-fr/media/dvl_media/HP_accessories_remote_tree-hd.png?twic=v1/background=transparent/cover=1300x1442"
+            />
+          </div>
         </div>
-    </div>
+      </div>
+
+      <div className={styles.eighthScreen}>
+        <div className={styles.meetingsContent}>
+          <p className={styles.meetingsSubtitle}>
+            Les rencontres d'Arles | Devialet
+          </p>
+          <h3 className={styles.meetingsTitles}>Clichés sonorisés.</h3>
+          <p className={styles.meetingsText}>
+            Cette année, Devialet met son expertise acoustique au service de
+            l'exposition Cartographies du corps. Découvrez une exposition
+            produite par les Rencontres d'Arles
+          </p>
+          <p className={styles.discoverButton} style={{ fontWeight: "600" }}>
+            Lire l'article ›
+          </p>
+        </div>
+      </div>
+
+      <div className={styles.ninthScreen}>
+        <div className={styles.storiesContent}>
+        <h6 className={styles.storiesTitles}>Nos belles histoires</h6>
+        <div className={styles.imgStoriesContent}>
+
+          <p
+            className={styles.imgStories} style={{'backgroundImage':`url('https://assets.devialet.com/fr-fr/media/dvl_media/Push_Media_Ariane.jpg?twic=v1/background=FFFFFF/contain=500x605')`}}>
+            <span div className={styles.imgStoriesText}>Arianegroup | Devialet </span><span className={styles.imgStoriesSubtitles}>Préparez-vous au décollage</span>
+            </p>
+            <p
+            className={styles.imgStories} style={{'backgroundImage':`url("https://assets.devialet.com/fr-fr/media/dvl_media/Push_Huawei_Vision_V.jpg?twic=v1/background=FFFFFF/contain=500x605")`}}>
+            <span div className={styles.imgStoriesText}>Huawei | Devialet </span><span className={styles.imgStoriesSubtitles}>Huawei vision v series : partage d'innovation et d'excellence</span>
+            </p>
+        </div>
+        <p className={styles.storiesButton} >Tout voir</p>
+      </div>
+      </div>
     </div>
   );
 }

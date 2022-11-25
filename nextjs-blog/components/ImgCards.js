@@ -9,7 +9,7 @@ const [hover, setHover]=useState(false)
 
 let backgroundStyle = {}
 if(hover && props.title){
-    backgroundStyle= {'filter':'brightness(50%)', 'backgroundImage':`url(${props.url})`, 'cursor':'pointer' }
+    backgroundStyle= {'filter':'brightness(50%)', 'backgroundImage':`url(${props.url})`, 'cursor':'pointer','transition':'all 0.3s'}
 } else {
     backgroundStyle =  {'backgroundImage':`url(${props.url})`}
 }
