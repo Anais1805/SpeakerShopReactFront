@@ -1,64 +1,58 @@
-
-
-.body{
+.body {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
-.firstScreen{
-  background-image:url('https://assets.devialet.com/fr-fr/media/dvl_media/Hero100_Phantom_Gold_Refurbished_desktop.jpg?twic=v1/background=000000/cover=2400x1478');
+.firstScreen {
+  background-image: url("https://assets.devialet.com/fr-fr/media/dvl_media/Hero100_Phantom_Gold_Refurbished_desktop.jpg?twic=v1/background=000000/cover=2400x1478");
   width: 100vw;
-  height:100vh;
+  height: 100vh;
   background-size: cover;
   margin: 0;
-  
 }
-.header{
-display : block;
-height: 50px;
-display: flex;
-justify-content: space-around;
-align-items: center;
-padding-top: 20px
+.header {
+  display: block;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
 }
-.logo{
+.logo {
   width: 150px;
   height: 40px;
   color: white;
   justify-content: center;
-  padding-left: 1.5vw
-
+  padding-left: 1.5vw;
 }
-.navBar{
+.navBar {
   display: flex;
   color: white;
   width: 55vw;
   justify-content: space-between;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 500;
   margin-left: 5vw;
   font-size: 16px;
-
 }
 
-.icons{
+.icons {
   width: 10vw;
   display: flex;
   margin-left: 5vh;
   margin-right: 5vh;
   justify-content: space-around;
-
 }
-.title{
+.title {
   font-weight: 900;
 }
-.titleContainer{
+.titleContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 4vw;
   margin-top: 30vh;
   color: white;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 25px;
 }
 .titleButton {
@@ -74,44 +68,40 @@ padding-top: 20px
   padding: 13px 25px;
 }
 
-
-
-.secondScreen{
+.secondScreen {
   width: 100vw;
   height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#F4F4F4;
+  background-color: #f4f4f4;
 }
-.images{
+.images {
   width: 45vw;
   height: 90vh;
   margin: 5vw;
   border-radius: 10px;
 }
-.rightScreenContainer{
-  font-family: 'Montserrat';
+.rightScreenContainer {
+  font-family: "Montserrat";
   font-size: 25px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: 6vw
-  
+  margin-right: 6vw;
 }
-.abstract{
+.abstract {
   font-weight: 450;
   line-height: 2;
   font-size: 22px;
 }
-.discoverButton{
-font-size: 16px;
-text-transform: uppercase;
-font-weight: bold;
-padding-top: 15px;
+.discoverButton {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 15px;
 }
 
-
-.thirdScreen{
+.thirdScreen {
   width: 100vw;
   height: 380vh;
   background-color: black;
@@ -120,7 +110,7 @@ padding-top: 15px;
   justify-content: center;
   scrollbar-width: none;
 }
-.titles3Container{
+.titles3Container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -129,25 +119,23 @@ padding-top: 15px;
   margin: 0.5vw;
   padding-bottom: 50px;
 }
-.titles3{
+.titles3 {
   color: white;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 50px;
-  margin: 0 
+  margin: 0;
 }
-.rightColumn{
+.rightColumn {
   display: flex;
   flex-direction: column;
   margin-top: -80vh;
 }
-.leftColumn{
+.leftColumn {
   display: flex;
   flex-direction: column;
-
 }
 
-
-.whiteBanner{
+.whiteBanner {
   width: 100vw;
   height: 25vh;
   display: flex;
@@ -155,144 +143,132 @@ padding-top: 15px;
   align-items: center;
   background-color: white;
 }
-.bannerIcons{
+.bannerIcons {
   border: 2px solid black;
   border-radius: 50%;
   padding: 5px;
   display: inline;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: bold;
-  font-size: 13px
-  
+  font-size: 13px;
 }
 
-
-.fourthScreen{
+.fourthScreen {
   width: 100vmax;
   height: 100vh;
-  background-color: #E5DED6;
+  background-color: #e5ded6;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.imgGiftCard{
+.imgGiftCard {
   width: 50vw;
   height: 75vh;
   border-radius: 10px;
-  margin: 5vw
+  margin: 5vw;
 }
-.giftTitle{
+.giftTitle {
   font-weight: 450;
   line-height: 1.5;
-  font-size: 48px
+  font-size: 48px;
 }
 
-
-.fifthScreen{
+.fifthScreen {
   width: 100vw;
   height: 160vh;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
   align-items: center;
-  font-family: 'Montserrat';
-
+  font-family: "Montserrat";
 }
-.ambitionSection{
+.ambitionSection {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin: 3vh 25vw 3vh 25vw;
-
 }
-.titleAmbition{
+.titleAmbition {
   font-size: 45px;
   font-weight: 900;
   margin: 0;
-  padding-top: 10vh
+  padding-top: 10vh;
 }
-.textAmbition{
+.textAmbition {
   font-size: 35px;
   text-align: center;
-  margin:0
+  margin: 0;
 }
-.video{
-overflow: hidden;
-border-radius: 10px;
-height: 100vh;
-display: flex;
-justify-content: stretch;
+.video {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 100vh;
+  display: flex;
+  justify-content: stretch;
 }
 
-.sixthScreen{
+.sixthScreen {
   width: 100vw;
   height: 130vh;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
-  display:flex;
+  display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 
-.allLivesTitles{
-  font-family: 'Montserrat';
+.allLivesTitles {
+  font-family: "Montserrat";
   font-size: 50px;
   margin: 0;
   font-weight: 900;
-  line-height: 1.5
-  
+  line-height: 1.5;
 }
-.allLivesText{
-  font-family: 'Montserrat';
+.allLivesText {
+  font-family: "Montserrat";
   font-size: 23px;
   width: 29vw;
   font-weight: 450;
   margin: 0;
   margin-right: 10vw;
-  
-
-  
-  
 }
-.allLivesImages{
+.allLivesImages {
   width: 40vw;
   height: 40vh;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.allLivesImg1{
+.allLivesImg1 {
   width: 40vw;
   height: 80vh;
   margin-left: -10vw;
-  z-index: 2
+  z-index: 2;
 }
-.allLivesImg2{
+.allLivesImg2 {
   width: 45vw;
   height: 90vh;
   margin: 5vw;
   border-radius: 10px;
   margin-left: -10vw;
   position: sticky;
-  z-index: 1
+  z-index: 1;
 }
 
-.seventhScreen{
+.seventhScreen {
   width: 100vw;
   height: 130vh;
-  background-color:  #F4F4F4;
+  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
-.accessoriesContent{
+.accessoriesContent {
   width: 90vw;
   height: 98vh;
   display: flex;
@@ -300,22 +276,19 @@ justify-content: stretch;
   justify-content: center;
   border-radius: 10px;
   margin: 0vh 5vw;
-  background-color: #BCAC9B;
+  background-color: #bcac9b;
   position: absolute;
-  
 }
-.leftPart{
+.leftPart {
   height: 90vh;
   width: 45vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
-  
 }
 
-.accessoryText{
-  font-family: 'Montserrat';
+.accessoryText {
+  font-family: "Montserrat";
   width: 30vw;
   margin: 0;
   margin-left: 6vw;
@@ -323,24 +296,20 @@ justify-content: stretch;
   line-height: 1.15em;
   font-weight: 450;
   justify-content: space-around;
-  
-  
 }
-.accessoryImg{
+.accessoryImg {
   width: 45vw;
   height: 98vh;
   margin-top: 4px;
   overflow: hidden;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
-  
 }
-.accessoryButton{
-  
-  font-family: 'Montserrat';
+.accessoryButton {
+  font-family: "Montserrat";
   width: 30vw;
   margin-top: 8vh;
-  background-color:black;
+  background-color: black;
   color: white;
   padding: 2vh;
   border-radius: 10px;
@@ -348,47 +317,45 @@ justify-content: stretch;
   text-transform: uppercase;
   font-weight: bold;
   margin-left: 6vw;
-  transition:all 0.3s;  
+  transition: all 0.3s;
 }
-.accessoryButton:hover{
+.accessoryButton:hover {
   background-color: white;
   color: black;
-  border: 2px solid black
+  border: 2px solid black;
 }
 
-.eighthScreen{
+.eighthScreen {
   width: 100vw;
   height: 100vh;
-  background-image: url('https://assets.devialet.com/fr-fr/media/dvl_media/HP_News_Arles_Background.jpg?twic=v1/background=f4f4f4/cover=1500x850');
-  font-family:'Montserrat';
+  background-image: url("https://assets.devialet.com/fr-fr/media/dvl_media/HP_News_Arles_Background.jpg?twic=v1/background=f4f4f4/cover=1500x850");
+  font-family: "Montserrat";
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0;
 }
-.meetingsContent{
+.meetingsContent {
   margin-left: 5vw;
-  
-
 }
-.meetingsSubtitle{
+.meetingsSubtitle {
   margin: 0;
   font-weight: 600;
   font-size: 20px;
 }
-.meetingsTitles{
-  font-family: 'Montserrat';
+.meetingsTitles {
+  font-family: "Montserrat";
   font-size: 45px;
-  margin:0;
+  margin: 0;
   margin-top: 1vh;
   font-weight: 600;
   line-height: 1.5;
-  letter-spacing:0.1mm;
+  letter-spacing: 0.1mm;
 }
 
-.meetingsText{
-  font-family: 'Montserrat';
+.meetingsText {
+  font-family: "Montserrat";
   font-size: 20px;
   width: 45vw;
   font-weight: 500;
@@ -397,156 +364,149 @@ justify-content: stretch;
   margin-right: 7vw;
   line-height: 2;
 }
-.ninthScreen{
+.ninthScreen {
   width: 100vw;
   height: 100vh;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   display: flex;
   justify-content: center;
-  background-color:  #F4F4F4;
-
+  background-color: #f4f4f4;
 }
-.storiesContent{
+.storiesContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 5vh;
 }
-.storiesTitles{
+.storiesTitles {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 600;
   overflow: hidden;
 }
 
-.storiesTitles::before{
-  margin-right:3em
+.storiesTitles::before {
+  margin-right: 3em;
 }
-.storiesTitles::after{
-margin-left:3em
+.storiesTitles::after {
+  margin-left: 3em;
 }
-.imgStoriesContent{
+.imgStoriesContent {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.imgStories{
+.imgStories {
   width: 23vw;
   height: 55vh;
   background-size: contain;
-  color: #FFF;
-  font-family: 'Montserrat';
+  color: #fff;
+  font-family: "Montserrat";
   text-transform: uppercase;
   font-weight: 600;
   margin: 1vw;
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  transition:all 0.3s;  
+  transition: all 0.3s;
 }
-.imgStories:hover{
+.imgStories:hover {
   filter: contrast(50%);
   cursor: pointer;
-   
 }
-.imgStoriesText{
-margin-top: 2.5vh; 
-margin-left: 1.5vw; 
-margin-bottom : 1.5vh; 
-
+.imgStoriesText {
+  margin-top: 2.5vh;
+  margin-left: 1.5vw;
+  margin-bottom: 1.5vh;
 }
-.imgStoriesSubtitles{
+.imgStoriesSubtitles {
   font-weight: 400;
   font-size: 11px;
   color: rgb(203, 201, 201);
-  margin-left: 1.5vw; 
+  margin-left: 1.5vw;
   margin-right: 1vw;
   line-height: 2;
-  
 }
-.storiesButton{
-  font-family: 'Montserrat';
+.storiesButton {
+  font-family: "Montserrat";
   width: 12vw;
   margin-top: 1vh;
-  background-color:black;
+  background-color: black;
   color: white;
   padding: 2vh;
   border-radius: 8px;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  transition:all 0.3s;  
+  transition: all 0.3s;
   font-weight: 600;
-  font-size: 12px
+  font-size: 12px;
 }
-.storiesButton:hover{
+.storiesButton:hover {
   background-color: white;
   color: black;
-  border: 2px solid black
+  border: 2px solid black;
 }
-.expBanner{
+.expBanner {
   width: 100vw;
   height: 20vh;
-  background-color:  #F4F4F4;
+  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
-
- 
 }
-.expContent{
+.expContent {
   display: flex;
   width: 95vw;
   justify-content: space-between;
 }
-.expButtonContent{
+.expButtonContent {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.expButton{
+.expButton {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family:'Montserrat';
+  font-family: "Montserrat";
   width: 25vw;
   height: 2vh;
   margin-top: 1vh;
-  background-color:black;
+  background-color: black;
   color: white;
   padding: 2vh;
   border-radius: 8px;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  transition:all 0.3s;  
+  transition: all 0.3s;
   font-weight: 600;
-  font-size: 12px
+  font-size: 12px;
 }
-.expButton:hover{
+.expButton:hover {
   background-color: white;
   color: black;
-  border: 2px solid black
+  border: 2px solid black;
 }
 
-.tenthScreen{
+.tenthScreen {
   width: 100vw;
   height: 85vh;
-  background-color:  #F4F4F4;
+  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
   padding-top: 3vh;
 }
 
-.eleventhScreen{
+.eleventhScreen {
   width: 100vw;
   height: 100vh;
-  background-color:  #F4F4F4;
+  background-color: #f4f4f4;
   display: flex;
   align-items: center;
 }
 
-.proPlace{
+.proPlace {
   width: 100vw;
   height: 80vh;
   background-color: black;
@@ -555,9 +515,9 @@ margin-bottom : 1.5vh;
   justify-content: center;
   align-items: center;
 }
-.proText{
+.proText {
   color: white;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 45px;
   font-weight: 500;
   width: 30vw;
@@ -565,30 +525,30 @@ margin-bottom : 1.5vh;
   line-height: 2;
   margin: 1.5vh;
 }
-.proTextButton{
+.proTextButton {
   color: white;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 45px;
   font-weight: 500;
   width: 30vw;
   text-align: center;
   line-height: 2;
   text-decoration: underline;
-  margin:0;
+  margin: 0;
   transition: all 0.3s;
 }
-.proTextButton:hover{
-  color:rgb(184, 180, 180)
+.proTextButton:hover {
+  color: rgb(184, 180, 180);
 }
 
-.secondWhiteBanner{
+.secondWhiteBanner {
   width: 100vw;
   height: 35vh;
-  background-color:  #F4F4F4;
+  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
 }
-.secondWhiteBannerContent{
+.secondWhiteBannerContent {
   width: 90vw;
   height: 30vh;
   display: flex;
@@ -596,3 +556,173 @@ margin-bottom : 1.5vh;
   align-items: center;
   background-color: white;
 }
+
+.twelfthScreen {
+  width: 100vw;
+  height: 75vh;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.joinUsBackground {
+  width: 90vw;
+  height: 70vh;
+  z-index: 2;
+  background-image: url("https://assets.devialet.com/media/dvl_media/Usine_Fallback_Image_Desktop.jpg?twic=v1/cover=2600x945");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.joinUsContent {
+  width: 55vw;
+  height: 35vh;
+  background-color: white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  margin: 2vw 1vh;
+}
+.joinUsTextContent {
+  color: black;
+  font-family: "Montserrat";
+  margin-left: 2vw;
+}
+.joinUsTitle {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 0;
+}
+.joinUsText {
+  color: rgb(162, 159, 159);
+  font-weight: 500;
+  width: 25vw;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.joinUsSubtext {
+  font-family: "Montserrat";
+  margin-top: 2vh;
+  color: rgb(162, 159, 159);
+  font-size: 10px;
+  font-weight: 500;
+  margin-left: 3vw;
+}
+.joinUsButtons {
+  width: 18vw;
+  margin: 0;
+  margin-right: 2vw;
+}
+.joinUsSecondContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.joinUsInput {
+  width: 16.5vw;
+  padding: 1vw 1vh;
+  color: rgb(241, 228, 228);
+  margin-bottom: 3vh;
+  border-radius: 0;
+  border-width: 0.2ch;
+  border-color: rgb(241, 228, 228);
+}
+.joinUsSignup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  background-color: black;
+  color: white;
+  padding: 2vh;
+  border-radius: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 0;
+}
+
+.joinUsSignup:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.lastScreen {
+  width: 100vw;
+  height: 90vh;
+  background-color: #f4f4f4;
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.contact {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+.contactPerson {
+  display: flex;
+  margin: 4vw;
+}
+.contactText1{
+  font-weight: 500;
+  font-size: 15px;
+  margin-right: 1vw;
+}
+.schedules{
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(162, 159, 159);
+}
+.contactPhones {
+  display: flex;
+  margin: 4vw;
+}
+
+.chat{
+  font-weight: 600;
+  font-size: 12px;
+  margin-right: 1.5vw;
+  text-transform: uppercase;
+
+}
+.infos{
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  font-weight: 500
+}
+.infosTitles{
+  font-size: 20px;
+  font-weight: 600
+}
+.footer{
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-weight: 500
+ 
+}
+.settings{
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+}
+

@@ -1,0 +1,11 @@
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+.infosTitles{
+    font-size: 20px;
+    font-weight: 600
+  }

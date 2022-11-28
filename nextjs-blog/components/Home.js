@@ -4,16 +4,23 @@ import UilReact from "@iconscout/react-unicons";
 import { UilUser } from "@iconscout/react-unicons";
 import { UilLocationPoint } from "@iconscout/react-unicons";
 import { UilShoppingBag } from "@iconscout/react-unicons";
+import { UilComment } from '@iconscout/react-unicons'
+import { UilPhone } from '@iconscout/react-unicons'
+import { UilInstagram } from '@iconscout/react-unicons'
+import { UilFacebook } from '@iconscout/react-unicons'
+import { UilTwitterAlt } from '@iconscout/react-unicons'
 
 import ImgCards from "./ImgCards";
 import WhiteBanner from "./WhiteBanner";
 import StoreCards from "./StoreCards";
 import SecondWhiteBanner from "./SecondWhiteBanner";
+import About from "./About";
 import { imgData1 } from "../data/imgCardsData";
 import { imgData2 } from "../data/imgCardsData";
 import { bannerInfos } from "../data/bannerIconData";
 import { storeCardsData } from "../data/storeCardsData";
-import { bannerInfos2 } from "../data/bannerIconData"
+import { bannerInfos2 } from "../data/bannerIconData";
+import { aboutData } from "../data/about";
 
 import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
@@ -46,12 +53,15 @@ export default function Home() {
   });
 
   const stores = storeCardsData.map((data, i) => {
-    return <StoreCards key={i} title={data.title} url={data.url}/>
-  })
+    return <StoreCards key={i} title={data.title} url={data.url} />;
+  });
   const banner2 = bannerInfos2.map((data, i) => {
     return <SecondWhiteBanner key={i} icon={data.icon} title={data.title} />;
   });
 
+  const about = aboutData.map((data, i)=> {
+    return <About title={data.title} item1={data.item1} item2={data.item2} item3={data.item3} item4={data.item4} item5={data.item5}/>
+  })
 
   return (
     <div className={styles.body}>
@@ -254,20 +264,23 @@ export default function Home() {
       <div className={styles.expBanner}>
         <div className={styles.expContent}>
           <div className={styles.expText}>
-            <p className={styles.allLivesTitles} style={{ fontWeight: "500", fontSize: '45px' }}>
+            <p
+              className={styles.allLivesTitles}
+              style={{ fontWeight: "500", fontSize: "45px" }}
+            >
               Vivez l'expérience Devialet
             </p>
-            <p className={styles.allLivesTitles} style={{fontSize: '45px'}}>dans le monde entier.</p>
+            <p className={styles.allLivesTitles} style={{ fontSize: "45px" }}>
+              dans le monde entier.
+            </p>
           </div>
           <div className={styles.expButtonContent}>
-          <p className={styles.expButton}>Trouver une boutique</p>
+            <p className={styles.expButton}>Trouver une boutique</p>
           </div>
         </div>
       </div>
 
-      <div className={styles.tenthScreen}>
-       {stores}
-      </div>
+      <div className={styles.tenthScreen}>{stores}</div>
 
       <div className={styles.eleventhScreen}>
         <div className={styles.proPlace}>
@@ -277,9 +290,82 @@ export default function Home() {
       </div>
 
       <div className={styles.secondWhiteBanner}>
-        <div className={styles.secondWhiteBannerContent}>
-              {banner2}
+        <div className={styles.secondWhiteBannerContent}>{banner2}</div>
+      </div>
+      <div className={styles.twelfthScreen}>
+        <div className={styles.joinUsBackground}>
+          {/* <ReactPlayer
+            style={{ margin: 0, padding: 0}}
+            url="https://www.devialet.com/media/dvl_media/usine_NL.mp4"
+            playing='true'
+            loop='true'
+            width="100%"
+            height="100%"
+          
+          /> */}
+
+          <div className={styles.joinUsContent}>
+            <div className={styles.joinUsSecondContainer}>
+              <div className={styles.joinUsTextContent}>
+                <p className={styles.joinUsTitle}>Rejoignez la révolution</p>
+                <p className={styles.joinUsText}>
+                  Actualités, mises à jours, exclusivités : soyez au premier
+                  rang.
+                </p>
+              </div>
+              <div className={styles.joinUsButtons}>
+                <input
+                  className={styles.joinUsInput}
+                  placeholder="Email"
+                  type="email"
+                />
+                <p className={styles.joinUsSignup}> S'inscrire</p>
+              </div>
+            </div>
+            <p className={styles.joinUsSubtext}>
+              Devialet n'utilisera les informations fournies que dans le cadre
+              défini par notre{" "}
+              <span style={{ textDecoration: "underline" }}>
+                politique de confidentialité
+              </span>
+            </p>
+          </div>
         </div>
+      </div>
+
+      <div className={styles.lastScreen}>
+        <div className={styles.contact}>
+        <div className={styles.contactPerson}>
+          <p className={styles.contactText1}>Contacter nos conseillers</p>
+          <p className={styles.schedules}>Lun au sam, 10.00-20.00(CET)</p>
+          </div>
+          <div className={styles.contactPhones}>
+            <UilComment size={20} style={{marginTop: '1vh', marginRight:'0.5vw'}}/>
+            <p className={styles.chat}>Chattez avec nous</p>
+            <UilPhone size={20} style={{marginTop: '1vh',  marginRight:'0.5vw'}}/>
+            <p className={styles.chat}>+33 9 75 18 67 60</p>
+          </div>
+          
+          </div>
+          <div className={styles.infos}>
+       {about}
+       </div>
+       <div className={styles.footer}>
+        <div className={styles.country}>
+          <p>FR 🇫🇷</p>
+        </div>
+        <div className={styles.settings}>
+          <p>Copyright©2022 Devialet</p>
+          <p>Juridique</p>
+          <p>Augmenter les contrastes</p>
+          <p>Préférences de cookies</p>
+        </div>
+        <div className={styles.iconsSocialN}>
+          <UilInstagram size={20} style={{'marginRight': '1.5vw'}}/>
+          <UilFacebook size={20} style={{'marginRight': '1.5vw'}}/>
+          <UilTwitterAlt size={20} style={{'marginRight': '1.5vw'}}/>
+        </div>
+      </div> 
       </div>
     </div>
   );
