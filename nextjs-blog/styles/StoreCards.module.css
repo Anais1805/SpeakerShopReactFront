@@ -1,0 +1,18 @@
+.storeCards{
+    font-family: Montserrat;
+    width: 30vw;
+    height: 70vh;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items:flex-end;
+    margin-right: 1vw;
+    
+  }
+  .textStoreCards{
+    color: white;
+    margin-left: 1.5vw;
+    margin-bottom: 3vh;
+    font-size: 14px;
+    font-weight: 500;
+  }

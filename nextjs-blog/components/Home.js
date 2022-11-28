@@ -7,9 +7,13 @@ import { UilShoppingBag } from "@iconscout/react-unicons";
 
 import ImgCards from "./ImgCards";
 import WhiteBanner from "./WhiteBanner";
+import StoreCards from "./StoreCards";
+import SecondWhiteBanner from "./SecondWhiteBanner";
 import { imgData1 } from "../data/imgCardsData";
 import { imgData2 } from "../data/imgCardsData";
 import { bannerInfos } from "../data/bannerIconData";
+import { storeCardsData } from "../data/storeCardsData";
+import { bannerInfos2 } from "../data/bannerIconData"
 
 import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
@@ -40,6 +44,14 @@ export default function Home() {
   const banner = bannerInfos.map((data, i) => {
     return <WhiteBanner key={i} icon={data.icon} title={data.title} />;
   });
+
+  const stores = storeCardsData.map((data, i) => {
+    return <StoreCards key={i} title={data.title} url={data.url}/>
+  })
+  const banner2 = bannerInfos2.map((data, i) => {
+    return <SecondWhiteBanner key={i} icon={data.icon} title={data.title} />;
+  });
+
 
   return (
     <div className={styles.body}>
@@ -206,20 +218,68 @@ export default function Home() {
 
       <div className={styles.ninthScreen}>
         <div className={styles.storiesContent}>
-        <h6 className={styles.storiesTitles}>Nos belles histoires</h6>
-        <div className={styles.imgStoriesContent}>
-
-          <p
-            className={styles.imgStories} style={{'backgroundImage':`url('https://assets.devialet.com/fr-fr/media/dvl_media/Push_Media_Ariane.jpg?twic=v1/background=FFFFFF/contain=500x605')`}}>
-            <span div className={styles.imgStoriesText}>Arianegroup | Devialet </span><span className={styles.imgStoriesSubtitles}>Préparez-vous au décollage</span>
+          <h6 className={styles.storiesTitles}>Nos belles histoires</h6>
+          <div className={styles.imgStoriesContent}>
+            <p
+              className={styles.imgStories}
+              style={{
+                backgroundImage: `url('https://assets.devialet.com/fr-fr/media/dvl_media/Push_Media_Ariane.jpg?twic=v1/background=FFFFFF/contain=500x605')`,
+              }}
+            >
+              <span div className={styles.imgStoriesText}>
+                Arianegroup | Devialet{" "}
+              </span>
+              <span className={styles.imgStoriesSubtitles}>
+                Préparez-vous au décollage
+              </span>
             </p>
             <p
-            className={styles.imgStories} style={{'backgroundImage':`url("https://assets.devialet.com/fr-fr/media/dvl_media/Push_Huawei_Vision_V.jpg?twic=v1/background=FFFFFF/contain=500x605")`}}>
-            <span div className={styles.imgStoriesText}>Huawei | Devialet </span><span className={styles.imgStoriesSubtitles}>Huawei vision v series : partage d'innovation et d'excellence</span>
+              className={styles.imgStories}
+              style={{
+                backgroundImage: `url("https://assets.devialet.com/fr-fr/media/dvl_media/Push_Huawei_Vision_V.jpg?twic=v1/background=FFFFFF/contain=500x605")`,
+              }}
+            >
+              <span div className={styles.imgStoriesText}>
+                Huawei | Devialet{" "}
+              </span>
+              <span className={styles.imgStoriesSubtitles}>
+                Huawei vision v series : partage d'innovation et d'excellence
+              </span>
             </p>
+          </div>
+          <p className={styles.storiesButton}>Tout voir</p>
         </div>
-        <p className={styles.storiesButton} >Tout voir</p>
       </div>
+
+      <div className={styles.expBanner}>
+        <div className={styles.expContent}>
+          <div className={styles.expText}>
+            <p className={styles.allLivesTitles} style={{ fontWeight: "500", fontSize: '45px' }}>
+              Vivez l'expérience Devialet
+            </p>
+            <p className={styles.allLivesTitles} style={{fontSize: '45px'}}>dans le monde entier.</p>
+          </div>
+          <div className={styles.expButtonContent}>
+          <p className={styles.expButton}>Trouver une boutique</p>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.tenthScreen}>
+       {stores}
+      </div>
+
+      <div className={styles.eleventhScreen}>
+        <div className={styles.proPlace}>
+          <p className={styles.proText}>Devialet pour les professionnels ?</p>
+          <p className={styles.proTextButton}>C'est ici.</p>
+        </div>
+      </div>
+
+      <div className={styles.secondWhiteBanner}>
+        <div className={styles.secondWhiteBannerContent}>
+              {banner2}
+        </div>
       </div>
     </div>
   );
