@@ -14,6 +14,7 @@ import ImgCards from "./ImgCards";
 import WhiteBanner from "./WhiteBanner";
 import StoreCards from "./StoreCards";
 import SecondWhiteBanner from "./SecondWhiteBanner";
+import Modal from "./Modal";
 import About from "./About";
 import { imgData1 } from "../data/imgCardsData";
 import { imgData2 } from "../data/imgCardsData";
@@ -22,11 +23,16 @@ import { storeCardsData } from "../data/storeCardsData";
 import { bannerInfos2 } from "../data/bannerIconData";
 import { aboutData } from "../data/about";
 
+import React, { useState } from "react";
+
+
+
 import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 export default function Home() {
-  const discoverStyle = {};
+const [showModal, setShowModal]= useState(false)
+  
   const cards1 = imgData1.map((data, i) => {
     return (
       <ImgCards
@@ -293,6 +299,7 @@ export default function Home() {
         <div className={styles.secondWhiteBannerContent}>{banner2}</div>
       </div>
       <div className={styles.twelfthScreen}>
+      
         <div className={styles.joinUsBackground}>
           {/* <ReactPlayer
             style={{ margin: 0, padding: 0}}
@@ -303,8 +310,9 @@ export default function Home() {
             height="100%"
           
           /> */}
-
+{showModal && <Modal closeModal={()=> setShowModal(false)}/>}
           <div className={styles.joinUsContent}>
+            
             <div className={styles.joinUsSecondContainer}>
               <div className={styles.joinUsTextContent}>
                 <p className={styles.joinUsTitle}>Rejoignez la révolution</p>
@@ -332,8 +340,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      
       <div className={styles.lastScreen}>
+      
         <div className={styles.contact}>
         <div className={styles.contactPerson}>
           <p className={styles.contactText1}>Contacter nos conseillers</p>
@@ -352,7 +361,10 @@ export default function Home() {
        </div>
        <div className={styles.footer}>
         <div className={styles.country}>
-          <p>FR 🇫🇷</p>
+          <p>FR</p> 
+          <p style={{fontSize: '25px', marginLeft: '1vw'}}>🇫🇷</p>
+          <p style={{fontSize: '25px', marginLeft: '1vw', marginBottom: '4vh'}} onClick={()=> setShowModal(true)}>⌵</p>
+          
         </div>
         <div className={styles.settings}>
           <p>Copyright©2022 Devialet</p>

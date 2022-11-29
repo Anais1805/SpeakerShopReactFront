@@ -1,0 +1,67 @@
+.modalBackground {
+  width: 100vw;
+  height: 210vh;
+  background-color: rgba(50, 50, 50, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 45vh;
+}
+
+.modalContainer {
+  width: 50vw;
+  height: 170vh;
+  background-color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.deleteButtonContainer{
+    font-family: 'Montserrat';
+    margin-bottom: 15vh;
+    margin-left: 90vw;
+    position: sticky;
+    
+}
+.deleteButton {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.deleteButton:hover{
+    color: black;
+}
+.modalTitle {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+.continent {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-left: 2vw;
+}
+.countries {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 12px;
+}
+
+.countryRows {
+  display: flex;
+  text-align: left;
+}
+.country {
+  width: 11vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}

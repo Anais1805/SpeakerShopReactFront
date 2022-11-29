@@ -720,6 +720,11 @@
   font-weight: 500
  
 }
+.country{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .settings{
   width: 60vw;
   display: flex;
