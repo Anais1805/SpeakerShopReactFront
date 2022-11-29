@@ -1,6 +1,9 @@
+
 .body {
   margin: 0;
   padding: 0;
+  
+
 }
 .firstScreen {
   background-image: url("https://assets.devialet.com/fr-fr/media/dvl_media/Hero100_Phantom_Gold_Refurbished_desktop.jpg?twic=v1/background=000000/cover=2400x1478");
@@ -8,31 +11,48 @@
   height: 100vh;
   background-size: cover;
   margin: 0;
+  display: flex;
+  align-items: center;
+  
+ 
 }
 .header {
-  display: block;
-  height: 50px;
+  width: 100vw;
+  /* height: 50px; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  position: fixed; 
+  color: white;
+  margin: 0;
+  
+}
+.header:hover{
+  background-color: rgba(177, 156, 156, 0.4);
+  width: 100vmax;
 }
 .logo {
   width: 150px;
   height: 40px;
-  color: white;
   justify-content: center;
   padding-left: 1.5vw;
 }
 .navBar {
   display: flex;
-  color: white;
+  /* color: white; */
   width: 55vw;
   justify-content: space-between;
   font-family: "Montserrat";
   font-weight: 500;
   margin-left: 5vw;
   font-size: 16px;
+  transition: all 0.3s;
+}
+.navItem:hover{
+  opacity: 0.8;
 }
 
 .icons {
@@ -46,11 +66,9 @@
   font-weight: 900;
 }
 .titleContainer {
-  display: flex;
+ 
   flex-direction: column;
-  justify-content: center;
   margin-left: 4vw;
-  margin-top: 30vh;
   color: white;
   font-family: "Montserrat";
   font-size: 25px;
