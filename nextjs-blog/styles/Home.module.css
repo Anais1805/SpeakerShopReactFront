@@ -25,14 +25,14 @@
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 10px;
-  position: fixed; 
+  position: absolute; 
   color: white;
   margin: 0;
   
 }
 .header:hover{
-  background-color: rgba(177, 156, 156, 0.4);
-  width: 100vmax;
+  /* background-color: rgba(177, 156, 156, 0.4); */
+  /* width: 100vmax; */
 }
 .logo {
   width: 150px;
