@@ -369,7 +369,7 @@ const [showModal, setShowModal]= useState(false)
           
         </div>
         <div className={styles.settings}>
-          <p>Copyright©2022 Devialet</p>
+          <p>Maquette Portfolio by Anais1805</p>
           <p>Juridique</p>
           <p>Augmenter les contrastes</p>
           <p>Préférences de cookies</p>
