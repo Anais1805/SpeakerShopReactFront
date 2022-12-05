@@ -5,11 +5,11 @@ import UilReact from "@iconscout/react-unicons";
 import { UilUser } from "@iconscout/react-unicons";
 import { UilLocationPoint } from "@iconscout/react-unicons";
 import { UilShoppingBag } from "@iconscout/react-unicons";
-import { UilComment } from '@iconscout/react-unicons'
-import { UilPhone } from '@iconscout/react-unicons'
-import { UilInstagram } from '@iconscout/react-unicons'
-import { UilFacebook } from '@iconscout/react-unicons'
-import { UilTwitterAlt } from '@iconscout/react-unicons'
+import { UilComment } from "@iconscout/react-unicons";
+import { UilPhone } from "@iconscout/react-unicons";
+import { UilInstagram } from "@iconscout/react-unicons";
+import { UilFacebook } from "@iconscout/react-unicons";
+import { UilTwitterAlt } from "@iconscout/react-unicons";
 
 import ImgCards from "./ImgCards";
 import WhiteBanner from "./WhiteBanner";
@@ -26,14 +26,12 @@ import { aboutData } from "../data/about";
 
 import React, { useState } from "react";
 
-
-
 import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 export default function Home() {
-const [showModal, setShowModal]= useState(false)
-  
+  const [showModal, setShowModal] = useState(false);
+
   const cards1 = imgData1.map((data, i) => {
     return (
       <ImgCards
@@ -66,31 +64,39 @@ const [showModal, setShowModal]= useState(false)
     return <SecondWhiteBanner key={i} icon={data.icon} title={data.title} />;
   });
 
-  const about = aboutData.map((data, i)=> {
-    return <About title={data.title} item1={data.item1} item2={data.item2} item3={data.item3} item4={data.item4} item5={data.item5}/>
-  })
+  const about = aboutData.map((data, i) => {
+    return (
+      <About
+        title={data.title}
+        item1={data.item1}
+        item2={data.item2}
+        item3={data.item3}
+        item4={data.item4}
+        item5={data.item5}
+      />
+    );
+  });
 
   return (
     <div className={styles.body}>
-     
-        <div className={styles.header}>
-          <img className={styles.logo} src="logoD.png" alt="logo" />
-          <div className={styles.navBar}>
-            <p className={styles.navItem}>Enceintes</p>
-            <p className={styles.navItem}>Enceintes portables</p>
-            <p className={styles.navItem}>Barre de son</p>
-            <p className={styles.navItem}>Ecouteurs</p>
-            <p className={styles.navItem}>Amplificateurs</p>
-            <p className={styles.navItem}>Cadeaux</p>
-          </div>
-          <div className={styles.icons}>
-            <UilUser size={20} color="white" />
-            <UilLocationPoint size={20} color="white" />
-            <UilShoppingBag size={20} color="white" />
-          </div>
+      <div className={styles.header}>
+        <img className={styles.logo} src="logoD.png" alt="logo" />
+        <div className={styles.navBar}>
+          <p className={styles.navItem}>Enceintes</p>
+          <p className={styles.navItem}>Enceintes portables</p>
+          <p className={styles.navItem}>Barre de son</p>
+          <p className={styles.navItem}>Ecouteurs</p>
+          <p className={styles.navItem}>Amplificateurs</p>
+          <p className={styles.navItem}>Cadeaux</p>
         </div>
-        <div className={styles.firstScreen}>
-        <div className={styles.titleContainer} >
+        <div className={styles.icons}>
+          <UilUser size={20} color="white" />
+          <UilLocationPoint size={20} color="white" />
+          <UilShoppingBag size={20} color="white" />
+        </div>
+      </div>
+      <div className={styles.firstScreen}>
+        <div className={styles.titleContainer}>
           <h1 style={{ fontWeight: "450", margin: "0" }}>
             Phantom reconditionné
           </h1>
@@ -301,7 +307,6 @@ const [showModal, setShowModal]= useState(false)
         <div className={styles.secondWhiteBannerContent}>{banner2}</div>
       </div>
       <div className={styles.twelfthScreen}>
-      
         <div className={styles.joinUsBackground}>
           {/* <ReactPlayer
             style={{ margin: 0, padding: 0}}
@@ -312,9 +317,8 @@ const [showModal, setShowModal]= useState(false)
             height="100%"
           
           /> */}
-{showModal && <Modal closeModal={()=> setShowModal(false)}/>}
+          {showModal && <Modal closeModal={() => setShowModal(false)} />}
           <div className={styles.joinUsContent}>
-            
             <div className={styles.joinUsSecondContainer}>
               <div className={styles.joinUsTextContent}>
                 <p className={styles.joinUsTitle}>Rejoignez la révolution</p>
@@ -335,51 +339,56 @@ const [showModal, setShowModal]= useState(false)
             <p className={styles.joinUsSubtext}>
               Devialet n'utilisera les informations fournies que dans le cadre
               défini par notre{" "}
-              <span style={{ textDecoration: "underline" }}>
+              <span style={{ textDecoration: "underline", cursor: 'pointer' }}>
                 politique de confidentialité
               </span>
             </p>
           </div>
         </div>
       </div>
-      
+
       <div className={styles.lastScreen}>
-      
         <div className={styles.contact}>
-        <div className={styles.contactPerson}>
-          <p className={styles.contactText1}>Contacter nos conseillers</p>
-          <p className={styles.schedules}>Lun au sam, 10.00-20.00(CET)</p>
+          <div className={styles.contactPerson}>
+            <p className={styles.contactText1}>Contacter nos conseillers</p>
+            <p className={styles.schedules}>Lun au sam, 10.00-20.00(CET)</p>
           </div>
           <div className={styles.contactPhones}>
-            <UilComment size={20} style={{marginTop: '1vh', marginRight:'0.5vw'}}/>
+            <UilComment size={20} style={{ marginRight: "0.5vw" }} />
             <p className={styles.chat}>Chattez avec nous</p>
-            <UilPhone size={20} style={{marginTop: '1vh',  marginRight:'0.5vw'}}/>
+            <UilPhone size={20} style={{ marginRight: "0.5vw" }} />
             <p className={styles.chat}>+33 9 75 18 67 60</p>
           </div>
-          
+        </div>
+        <div className={styles.infos}>{about}</div>
+        <div className={styles.footer}>
+          <div className={styles.country}>
+            <p>FR</p>
+            <p style={{ fontSize: "25px", marginLeft: "1vw" }}>🇫🇷</p>
+            <p
+              style={{
+                fontSize: "25px",
+                marginLeft: "1vw",
+                marginBottom: "1.5vh",
+                cursor: 'pointer'
+              }}
+              onClick={() => setShowModal(true)}
+            >
+              ⌵
+            </p>
           </div>
-          <div className={styles.infos}>
-       {about}
-       </div>
-       <div className={styles.footer}>
-        <div className={styles.country}>
-          <p>FR</p> 
-          <p style={{fontSize: '25px', marginLeft: '1vw'}}>🇫🇷</p>
-          <p style={{fontSize: '25px', marginLeft: '1vw', marginBottom: '4vh'}} onClick={()=> setShowModal(true)}>⌵</p>
-          
+          <div className={styles.settings}>
+            <p>Maquette Portfolio by Anais1805</p>
+            <p>Juridique</p>
+            <p>Augmenter les contrastes</p>
+            <p>Préférences de cookies</p>
+          </div>
+          <div className={styles.iconsSocialN}>
+            <UilInstagram size={20} style={{ marginRight: "1.5vw" }} />
+            <UilFacebook size={20} style={{ marginRight: "1.5vw" }} />
+            <UilTwitterAlt size={20} style={{ marginRight: "1.5vw" }} />
+          </div>
         </div>
-        <div className={styles.settings}>
-          <p>Maquette Portfolio by Anais1805</p>
-          <p>Juridique</p>
-          <p>Augmenter les contrastes</p>
-          <p>Préférences de cookies</p>
-        </div>
-        <div className={styles.iconsSocialN}>
-          <UilInstagram size={20} style={{'marginRight': '1.5vw'}}/>
-          <UilFacebook size={20} style={{'marginRight': '1.5vw'}}/>
-          <UilTwitterAlt size={20} style={{'marginRight': '1.5vw'}}/>
-        </div>
-      </div> 
       </div>
     </div>
   );

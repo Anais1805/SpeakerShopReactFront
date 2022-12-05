@@ -24,10 +24,11 @@
   margin: 0;
   
 }
+
 .header:hover{
-  /* background-color: rgba(177, 156, 156, 0.4); */
-  /* width: 100vmax; */
+  cursor: pointer;
 }
+
 .logo {
   width: 150px;
   height: 40px;
@@ -60,7 +61,6 @@
   font-weight: 900;
 }
 .titleContainer {
- 
   flex-direction: column;
   margin-left: 4vw;
   color: white;
@@ -70,14 +70,21 @@
 .titleButton {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: space-around;
   text-transform: uppercase;
   border: 2px solid white;
   border-radius: 10px;
   font-size: 12px;
   font-weight: bold;
-  width: 100px;
+  width: 10vw;
   padding: 13px 25px;
+  margin-top: 5vh;
+  transition: all 3ms
+}
+
+.titleButton:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 .secondScreen {
@@ -111,6 +118,9 @@
   text-transform: uppercase;
   font-weight: bold;
   padding-top: 15px;
+}
+.discoverButton:hover{
+  cursor: pointer;
 }
 
 .thirdScreen {
@@ -200,13 +210,14 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 3vh 25vw 3vh 25vw;
+  margin: 3vh 25vw 5vh 25vw;
+  
 }
 .titleAmbition {
   font-size: 45px;
   font-weight: 900;
   margin: 0;
-  padding-top: 10vh;
+  padding-top: 6vh;
 }
 .textAmbition {
   font-size: 35px;
@@ -335,6 +346,7 @@
   background-color: white;
   color: black;
   border: 2px solid black;
+  cursor: pointer;
 }
 
 .eighthScreen {
@@ -458,6 +470,7 @@
   background-color: white;
   color: black;
   border: 2px solid black;
+  cursor: pointer;
 }
 .expBanner {
   width: 100vw;
@@ -468,7 +481,7 @@
 }
 .expContent {
   display: flex;
-  width: 95vw;
+  width: 90vw;
   justify-content: space-between;
 }
 .expButtonContent {
@@ -481,8 +494,8 @@
   justify-content: center;
   align-items: center;
   font-family: "Montserrat";
-  width: 25vw;
-  height: 2vh;
+  width: 23vw;
+  height: 6vh;
   margin-top: 1vh;
   background-color: black;
   color: white;
@@ -499,6 +512,7 @@
   background-color: white;
   color: black;
   border: 2px solid black;
+  cursor: pointer;
 }
 
 .tenthScreen {
@@ -551,6 +565,7 @@
 }
 .proTextButton:hover {
   color: rgb(184, 180, 180);
+  cursor: pointer;
 }
 
 .secondWhiteBanner {
@@ -626,9 +641,14 @@
   margin-left: 3vw;
 }
 .joinUsButtons {
-  width: 18vw;
+  width: 16.75vw;
   margin: 0;
   margin-right: 2vw;
+}
+.joinUsButtons:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
 .joinUsSecondContainer {
   display: flex;
@@ -702,6 +722,7 @@
 .contactPhones {
   display: flex;
   margin: 4vw;
+  align-items: center;
 }
 
 .chat{
@@ -743,3 +764,6 @@
   justify-content: space-around;
 }
 
+.iconsSocialN:hover{
+  cursor: pointer;
+}
